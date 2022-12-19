@@ -8,14 +8,9 @@ app.use(cors())
 
 var server = http.createServer(app);
 
-const io = new Server(server, {
-    cors: {
-        origin: "http://localhost:3000",
-        methods: ["GET", "POST"]
-    }
-});
+const io = new Server(server);
 
-app.get("/", (req, res) => { res.send("Chat BE with Socket.io by Prince Raj"); res.end() })
+app.get("/", (req, res) => { res.send("Server is up and running...."); res.end() })
 
 io.on("connection", (socket) => {
     console.log(socket.id)
