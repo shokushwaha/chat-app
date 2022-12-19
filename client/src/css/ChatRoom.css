@@ -1,0 +1,125 @@
+ .mainWrap {
+     background-color: black;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .outerBox {
+     border: 2px solid black;
+     width: 50%;
+     background-color: black;
+     border: 1px solid white;
+ }
+
+ .innerBox {
+     text-align: center;
+     text-transform: uppercase;
+     background-color: black;
+ }
+
+ .title {
+     background-color: coral;
+     padding: 15px;
+     font-family: sans-serif;
+     font-weight: 800;
+     border-radius: 4px;
+     color: white;
+     font-size: 20px;
+ }
+
+ .wrap {
+     background-color: whitesmoke;
+     border-radius: 4px;
+     padding: 4px;
+     height: 450px;
+     overflow-y: scroll;
+     background-color: azure;
+     margin-top: -10px;
+ }
+
+ .sender {
+     display: flex;
+     justify-content: end;
+     padding: 4px;
+ }
+
+ .sendMsg {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     margin: 4px;
+     border-radius: 4px;
+     width: auto;
+     background-color: rgb(195, 247, 183);
+     padding: 8px;
+ }
+
+ .msgName {
+     font-family: monospace;
+     margin: 0px 4px;
+     margin-right: 8px;
+ }
+
+ .time {
+     color: grey;
+ }
+
+ .mainMsg {
+     font-family: cursive;
+ }
+
+ .receiver {
+     display: flex;
+     justify-content: start;
+     padding: 4px;
+ }
+
+ .receiveMsg {
+     display: flex;
+     flex-direction: column;
+     padding: 8px;
+     margin: 4px;
+     border-radius: 4px;
+     width: auto;
+     background-color: rgb(189, 236, 244);
+ }
+
+
+ .sendForm {
+     border: 2px soldi red;
+     display: flex;
+
+ }
+
+ .sendInput {
+     background-color: azure;
+     border-radius: 4px;
+     border: 2px solid black;
+
+     width: 690px;
+ }
+
+ input:focus {
+     background-color: rgb(236, 250, 215);
+ }
+
+ .sendBtn {
+     background-color: black;
+     color: azure;
+     border: none;
+     outline: none;
+     padding: 10px;
+     border-radius: 4px;
+     background-color: coral;
+     width: 60px;
+ }
+
+ .sendBtn:hover {
+     transform: scale(1.01);
+     background-color: greenyellow;
+     color: black;
+     transition-duration: 0.2s;
+ }
