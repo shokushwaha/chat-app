@@ -1,4 +1,4 @@
-require('dotenv').config()
+
 const express = require("express")
 const { Server } = require("socket.io");
 var http = require('http');
@@ -30,6 +30,6 @@ io.on("connection", (socket) => {
 
 });
 
-const port = process.env.PORT
+const port = 5000
 
 server.listen(port, console.log(`App started at port ${port}`)) 
