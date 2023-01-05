@@ -7,7 +7,6 @@ const app = express()
 app.use(cors())
 
 var server = http.createServer(app);
-
 const io = new Server(server, {
     cors: {
         origin: "http://localhost:3000",
@@ -30,6 +29,6 @@ io.on("connection", (socket) => {
 
 });
 
-const port = process.env.PORT
+const port = 5000
 
 server.listen(port, console.log(`App started at port ${port}`)) 
