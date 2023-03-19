@@ -1,5 +1,5 @@
  .mainWrap {
-     background-color: black;
+     background-color: #0a0e1b;
      height: 100%;
      width: 100%;
      display: flex;
@@ -9,34 +9,38 @@
 
  .outerBox {
      border: 2px solid black;
-     width: 50%;
-     background-color: black;
-     border: 1px solid white;
+     width: 80%;
+     border-radius: 10px;
+     background-color: #010e1d;
+     border: 1px solid azure;
+     box-shadow: 0px 0px 20px azure;
  }
 
  .innerBox {
+     border-radius: 10px;
      text-align: center;
      text-transform: uppercase;
-     background-color: black;
+     background-color: #010e1d;
  }
 
  .title {
-     background-color: coral;
+     background-color: #010e1d;
      padding: 15px;
      font-family: sans-serif;
      font-weight: 800;
      border-radius: 4px;
-     color: white;
+     color: #1eea3a;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      font-size: 20px;
+     border-bottom: 4px solid azure;
  }
 
  .wrap {
-     background-color: whitesmoke;
      border-radius: 4px;
      padding: 4px;
      height: 450px;
      overflow-y: scroll;
-     background-color: azure;
+     background-color: #010e1d;
      margin-top: -10px;
  }
 
@@ -53,8 +57,10 @@
      margin: 4px;
      border-radius: 4px;
      width: auto;
-     background-color: rgb(195, 247, 183);
+     background-color: transparent;
+     border: 1px solid rgb(247, 108, 198);
      padding: 8px;
+     color: rgb(247, 108, 198);
  }
 
  .msgName {
@@ -84,12 +90,14 @@
      margin: 4px;
      border-radius: 4px;
      width: auto;
-     background-color: rgb(189, 236, 244);
+     color: rgb(85, 225, 225);
+     background-color: transparent;
+     border: 1px solid rgb(85, 225, 225);
  }
 
 
  .sendForm {
-     border: 2px soldi red;
+     border: 2px soldi #1eea3c;
      display: flex;
 
  }
@@ -98,8 +106,7 @@
      background-color: azure;
      border-radius: 4px;
      border: 2px solid black;
-
-     width: 690px;
+     width: 80vw;
  }
 
  input:focus {
@@ -107,14 +114,16 @@
  }
 
  .sendBtn {
-     background-color: black;
-     color: azure;
+     background-color: azure;
+     color: black;
      border: none;
      outline: none;
      padding: 10px;
      border-radius: 4px;
-     background-color: coral;
+     background-color: #1eea3c;
      width: 60px;
+     margin: 4px auto;
+
  }
 
  .sendBtn:hover {

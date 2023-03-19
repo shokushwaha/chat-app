@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 function App() {
   return (
-    <div className="container-fluid bg-light text-dark d-flex align-items-center justify-content-center" style={{ height: "100vh" }}>
+    <div style={{ height: "100vh" }}>
       <Router>
         <Routes>
           <Route index element={<MainForm />} />

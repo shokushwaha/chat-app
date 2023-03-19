@@ -38,26 +38,27 @@ const MainForm = () => {
 
     return (
         <div className="outer-box">
+
             <div className="inner-box">
 
                 <form onSubmit={handleSubmit}>
                     <div className="forms">
-                        <h2 className="heading">Welcome to Chatclub</h2>
-                    </div>
-                    <div className="form-input">
+                        <h2 className="heading">Chatifyy</h2>
+
+
                         <input type="name" name="name" placeholder="Name...." onChange={handleChange} />
-                    </div>
-                    <div className="form-input">
 
 
                         <input type="text" placeholder="Room...." name="room" onChange={handleChange} />
 
 
+
+                        <button type="submit" className="btn">Join</button>
+                        {error ? <small className="error">{error}</small> : ""}
                     </div>
-                    <button type="submit" className="btn">Submit</button>
-                    {error ? <small className="error">{error}</small> : ""}
                 </form>
             </div>
+
         </div>
     )
 }

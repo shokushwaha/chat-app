@@ -5,23 +5,19 @@ var http = require('http');
 const cors = require("cors")
 const app = express()
 app.use(cors())
+require('dotenv').config()
 
 var server = http.createServer(app);
-<<<<<<< HEAD:server/app.js
+
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: process.env.BASE_URL,
         methods: ["GET", "POST"]
     }
 });
 
-app.get("/", (req, res) => { res.send("working...."); res.end() })
-=======
-
-const io = new Server(server);
 
 app.get("/", (req, res) => { res.send("Server is up and running...."); res.end() })
->>>>>>> 09d18c2bb0e3b746abf8de1fbe69118aadcd7889:server/index.js
 
 io.on("connection", (socket) => {
     console.log(socket.id)
@@ -36,6 +32,6 @@ io.on("connection", (socket) => {
 
 });
 
-const port = 5000
+const PORT = process.env.PORT || 6010
 
-server.listen(port, console.log(`App started at port ${port}`)) 
+server.listen(PORT, console.log(`App started at port ${PORT}`)) 
